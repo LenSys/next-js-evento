@@ -13,6 +13,24 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Import logo with Next.js image component
 - Use accent color in Tailwind (config)
 - Set metadata + favicon for the project
+- Determine active path in url: usePathname()
+- Server vs Client components
+- use clsx()
+- use Framer Motion with layoutid (layoutid is used to identify a motion element -> different divs with the same layoutid become the same div for Framer Motion and the difference will be animated)
+
+## Install clsx()
+
+```bash
+npm install clsx
+```
+
+## Install FramerMotion
+
+```bash
+npm install framer-motion@10.16.4
+```
+
+## Other Learnings
 
 - Use types instead of interfaces -> describe primitive values (string, number, boolean) -> describe union types -> utility-types -> describe tupels -> extract type from something else
 - cn() utility function for TailwindCSS
