@@ -12,6 +12,7 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Routing strategy (layout and pages files; dynamic routes e.g. with [slug]; Link component in Next.js)
 - Import logo with Next.js image component
 - Use accent color in Tailwind (config)
+- Set metadata + favicon for the project
 
 - Use types instead of interfaces -> describe primitive values (string, number, boolean) -> describe union types -> utility-types -> describe tupels -> extract type from something else
 - cn() utility function for TailwindCSS
