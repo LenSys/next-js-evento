@@ -33,6 +33,8 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Use Tailwind Merge()
 - Add utility function cn() -> replace twMerge() and clsx()
 - Fetch events for the correct city
+- Get event slug from url via page params
+- Use Next.js Image component and design tricks (blurred background image), image sizes, quality and priority
 
 ## Install clsx()
 
