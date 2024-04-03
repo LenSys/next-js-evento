@@ -23,6 +23,8 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Add reusable h1 component
 - Add scrollbar styling
 - Get params in page component
+- Fetch events in a server component without useEffect
+- Type Evento event in a lib/types.ts file
 
 ## Install clsx()
 
