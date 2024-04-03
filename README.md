@@ -25,6 +25,14 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Get params in page component
 - Fetch events in a server component without useEffect
 - Type Evento event in a lib/types.ts file
+- Add EventsList component with an EventCard component
+- Use EventCard component with flexbox tricks
+- Add event date to the EventCard component
+- Add hover effect to EventCard
+- Add H1 reusability
+- Use Tailwind Merge()
+- Add utility function cn() -> replace twMerge() and clsx()
+- Fetch events for the correct city
 
 ## Install clsx()
 
@@ -36,6 +44,12 @@ npm install clsx
 
 ```bash
 npm install framer-motion@10.16.4
+```
+
+## Install tailwind-merge
+
+```bash
+npm install tailwind-merge@2.0.0
 ```
 
 ## Other Learnings
