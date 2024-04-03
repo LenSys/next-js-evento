@@ -19,6 +19,10 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - use Framer Motion with layoutid (layoutid is used to identify a motion element -> different divs with the same layoutid become the same div for Framer Motion and the difference will be animated)
 - Handle form submit event
 - Navigate to a route using useRouter() with .push('route-path')
+- Create events page with styling
+- Add reusable h1 component
+- Add scrollbar styling
+- Get params in page component
 
 ## Install clsx()
 
