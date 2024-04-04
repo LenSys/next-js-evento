@@ -69,6 +69,7 @@ const parsedPage = pageNumberSchema.safeParse(searchParams.page);
 - Pre-generating popular routes -> static rendering for popular routes
 - Link component prefetches URLs it is linking to in production
 - Put result of Prisma / ORM calls into the data cache
+- Use package "server-only" to enable server-only files which generate an error when used on the client-side
 
 ## Install clsx()
 
@@ -149,6 +150,12 @@ npm install @radix-ui/react-icons@1.3.0
 
 ```bash
 npm install zod@3.22.4
+```
+
+## Install Server-Only
+
+```bash
+npm install server-only
 ```
 
 ## Other Learnings

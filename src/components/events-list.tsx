@@ -1,5 +1,5 @@
+import { getEvents } from "@/lib/server-utils";
 import EventCard from "./event-card";
-import { getEvents } from "@/lib/utils";
 import PaginationControls from "./pagination-controls";
 import { DB_RESULTS_PER_PAGE } from "@/lib/constants";
 
