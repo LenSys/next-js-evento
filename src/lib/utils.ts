@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 import prisma from "./db";
 import { notFound } from "next/navigation";
 import { DB_RESULTS_PER_PAGE } from "./constants";
+import { unstable_cache } from "next/cache";
 
 // ...inputs becomes an inputs array
 export function cn(...inputs: ClassValue[]) {
@@ -13,7 +14,7 @@ export function capitalize(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-export async function getEvents(city: string, page = 1) {
+export const getEvents = unstable_cache(async (city: string, page = 1) => {
   // const response = await fetch(
   //   `https://bytegrad.com/course-assets/projects/evento/api/events?city=${city}`
   // );
@@ -42,9 +43,9 @@ export async function getEvents(city: string, page = 1) {
   });
 
   return { events, totalCount };
-}
+});
 
-export async function getEvent(slug: string) {
+export const getEvent = unstable_cache(async (slug: string) => {
   // const response = await fetch(
   //   `https://bytegrad.com/course-assets/projects/evento/api/events/${slug}`
   // );
@@ -62,4 +63,4 @@ export async function getEvent(slug: string) {
   }
 
   return event;
-}
+});

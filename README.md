@@ -65,6 +65,10 @@ const parsedPage = pageNumberSchema.safeParse(searchParams.page);
 ```
 
 - Redirect URLs with middleware
+- Static vs dynamic rendering
+- Pre-generating popular routes -> static rendering for popular routes
+- Link component prefetches URLs it is linking to in production
+- Put result of Prisma / ORM calls into the data cache
 
 ## Install clsx()
 
