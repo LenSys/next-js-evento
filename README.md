@@ -64,6 +64,8 @@ const parsedPage = pageNumberSchema.safeParse(searchParams.page);
   }
 ```
 
+- Redirect URLs with middleware
+
 ## Install clsx()
 
 ```bash
