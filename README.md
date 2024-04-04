@@ -40,6 +40,8 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Add EventsList Suspense - fetch data in a component and wrap it in suspense
 - Data fetching wrapper component for EventsList to create a reusable EventsList component
 - Data caching and revalidation in Next.js -> fetch API is modified and caches automatically fetch requests
+- Display event name as title with generateMetadata function
+- Build-in fetch memoization in Next.js
 
 ## Install clsx()
 
