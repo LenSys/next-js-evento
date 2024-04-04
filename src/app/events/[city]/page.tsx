@@ -34,7 +34,8 @@ export default function EventsPage({ params, searchParams }: EventsPageProps) {
         {city !== "all" && `Events in ${capitalize(city)}`}
       </H1>
 
-      <Suspense fallback={<LoadingIndicator />}>
+      {/* if the city or key changes, the key also changes which triggers a new suspense event and the loading indicator is displayed again! */}
+      <Suspense key={city + page} fallback={<LoadingIndicator />}>
         <EventsList city={city} page={+page} />
       </Suspense>
     </main>

@@ -51,6 +51,7 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Use unary operator (+), convert string to number
 - Use Radix UI for icons
 - Return total count of events with paginated events
+- Use key prop for Suspense to retrigger the suspense component when searchParams change
 
 ## Install clsx()
 
