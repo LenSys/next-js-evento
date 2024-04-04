@@ -35,6 +35,8 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Fetch events for the correct city
 - Get event slug from url via page params
 - Use Next.js Image component and design tricks (blurred background image), image sizes, quality and priority
+- Add special file "loading.tsx" (rendered during loading of a component) for a loading indicator
+- Showing skeleton cards
 
 ## Install clsx()
 
