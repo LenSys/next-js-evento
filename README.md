@@ -42,6 +42,7 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Data caching and revalidation in Next.js -> fetch API is modified and caches automatically fetch requests
 - Display event name as title with generateMetadata function
 - Build-in fetch memoization in Next.js
+- Create data fetching utility functions to keep the code DRY
 
 ## Install clsx()
 
