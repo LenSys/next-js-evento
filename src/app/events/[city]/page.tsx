@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import LoadingIndicator from "./loading-indicator";
 import { capitalize } from "@/lib/utils";
 import { Metadata } from "next";
+import { z } from "zod";
 
 type Props = {
   params: {
@@ -23,9 +24,17 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
+const pageNumberSchema = z.coerce.number().int().positive().optional();
+
 export default function EventsPage({ params, searchParams }: EventsPageProps) {
   const city = params.city;
-  const page = searchParams.page || 1;
+  // const page = searchParams.page || 1;
+
+  const parsedPage = pageNumberSchema.safeParse(searchParams.page);
+  if (!parsedPage.success) {
+    throw new Error("Invalid page number");
+  }
+  const page = parsedPage.data ?? 1;
 
   return (
     <main className="flex flex-col items-center py-24 px-[20px] min-h-[110vh]">
@@ -36,7 +45,7 @@ export default function EventsPage({ params, searchParams }: EventsPageProps) {
 
       {/* if the city or key changes, the key also changes which triggers a new suspense event and the loading indicator is displayed again! */}
       <Suspense key={city + page} fallback={<LoadingIndicator />}>
-        <EventsList city={city} page={+page} />
+        <EventsList city={city} page={page} />
       </Suspense>
     </main>
   );

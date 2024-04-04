@@ -52,6 +52,17 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Use Radix UI for icons
 - Return total count of events with paginated events
 - Use key prop for Suspense to retrigger the suspense component when searchParams change
+- Create a special page "error.tsx" to handle app errors
+- Use Zod to validate incoming data into the app:
+
+```JS
+const pageNumberSchema = z.coerce.number().int().positive().optional();
+...
+const parsedPage = pageNumberSchema.safeParse(searchParams.page);
+  if (!parsedPage.success) {
+    throw new Error("Invalid page number");
+  }
+```
 
 ## Install clsx()
 
@@ -126,6 +137,12 @@ npx prisma db seed
 
 ```bash
 npm install @radix-ui/react-icons@1.3.0
+```
+
+## Install Zod
+
+```bash
+npm install zod@3.22.4
 ```
 
 ## Other Learnings

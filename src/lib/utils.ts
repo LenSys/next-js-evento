@@ -20,6 +20,10 @@ export async function getEvents(city: string, page = 1) {
 
   // const events: EventoEvent[] = await response.json();
 
+  if (page < 1) {
+    return notFound();
+  }
+
   const events = await prisma.eventoEvent.findMany({
     where: {
       city: city === "all" ? undefined : capitalize(city),
