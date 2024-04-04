@@ -37,6 +37,9 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Use Next.js Image component and design tricks (blurred background image), image sizes, quality and priority
 - Add special file "loading.tsx" (rendered during loading of a component) for a loading indicator
 - Showing skeleton cards
+- Add EventsList Suspense - fetch data in a component and wrap it in suspense
+- Data fetching wrapper component for EventsList to create a reusable EventsList component
+- Data caching and revalidation in Next.js -> fetch API is modified and caches automatically fetch requests
 
 ## Install clsx()
 
