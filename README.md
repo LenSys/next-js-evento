@@ -44,6 +44,13 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Build-in fetch memoization in Next.js
 - Create data fetching utility functions to keep the code DRY
 - Implement a scroll-based animation for event cards with Framer Motion (with useScroll hook)
+- Add a database with SQLite and Prisma
+- Replace fetch API with Prisma Client
+- Add sorting of events by date with Prisma
+- Add server-side pagination in Next.js fro EventsList
+- Use unary operator (+), convert string to number
+- Use Radix UI for icons
+- Return total count of events with paginated events
 
 ## Install clsx()
 
@@ -61,6 +68,63 @@ npm install framer-motion@10.16.4
 
 ```bash
 npm install tailwind-merge@2.0.0
+```
+
+## Install Prisma
+
+```bash
+npm install prisma@5.6.0 --save-dev
+```
+
+## Use Prisma
+
+```bash
+npx prisma init --datasource-provider sqlite
+```
+
+## Edit Prisma Schema file
+
+- Edit schema.prisma file (add a model)
+
+## Create DB from Schema with Prisma
+
+```bash
+npx prisma db push
+```
+
+## Display data in DB with Prima Studio
+
+```bash
+npx prisma studio
+```
+
+## Seed DB with a seed.ts file
+
+- Seed the database with a "seed.ts" file
+- Add a seed script to package.json:
+
+```JSON
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+```
+
+- Install ts-node:
+
+```bash
+npm install ts-node@10.9.1 --save-dev
+```
+
+- Run seed script:
+
+```bash
+npx prisma db seed
+```
+
+## Install Radix UI Icons
+
+```bash
+npm install @radix-ui/react-icons@1.3.0
 ```
 
 ## Other Learnings

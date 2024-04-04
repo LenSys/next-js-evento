@@ -1,3 +1,4 @@
+/*
 export type TEventoEvent = {
   id: number;
   name: string;
@@ -9,3 +10,4 @@ export type TEventoEvent = {
   imageUrl: string;
   description: string;
 };
+*/
