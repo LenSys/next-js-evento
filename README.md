@@ -43,6 +43,7 @@ https://bytegrad.com/app/professional-react-and-nextjs/
 - Display event name as title with generateMetadata function
 - Build-in fetch memoization in Next.js
 - Create data fetching utility functions to keep the code DRY
+- Implement a scroll-based animation for event cards with Framer Motion (with useScroll hook)
 
 ## Install clsx()
 
