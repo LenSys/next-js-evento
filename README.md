@@ -5,6 +5,8 @@ Next.js Evento created with HtML, CSS, TypeScript and Next.js.
 Created during React Tutorial
 https://bytegrad.com/app/professional-react-and-nextjs/
 
+![Next.js-Evento-Demo](nextjs-evento-demo.gif)
+
 ![Screenshot](screenshot.png)
 
 ## Learnings
