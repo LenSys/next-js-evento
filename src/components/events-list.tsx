@@ -22,6 +22,9 @@ export default async function EventsList({ city, page }: EventsListProps) {
 
   return (
     <section className="max-w-[1100px] flex flex-wrap gap-10 justify-center px-[20px]">
+      {totalCount === 0 && (
+        <p className="-mt-24">No events available for {city}.</p>
+      )}
       {events.map((event) => (
         <EventCard key={event.id} event={event} />
       ))}
