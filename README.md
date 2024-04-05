@@ -70,6 +70,16 @@ const parsedPage = pageNumberSchema.safeParse(searchParams.page);
 - Link component prefetches URLs it is linking to in production
 - Put result of Prisma / ORM calls into the data cache
 - Use package "server-only" to enable server-only files which generate an error when used on the client-side
+- Deploy static files with build options (static export) in "next.config.js":
+
+```JS
+const nextConfig = {
+    output: "export",
+    ...
+}
+```
+
+-> generate HTML, CSS and JS files!
 
 ## Install clsx()
 
